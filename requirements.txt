@@ -1,0 +1,15 @@
+streamlit
+python-dotenv
+langchain
+crewai
+spacy
+pandas
+requests
+beautifulsoup4
+PyPDF2
+python-docx
+faiss-cpu
+langchain_groq
+dotenv
+langchain_community
+langchain_ollama
