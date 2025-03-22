@@ -13,3 +13,5 @@ langchain_groq
 dotenv
 langchain_community
 langchain_ollama
+spacy
+en-core-web-lg
