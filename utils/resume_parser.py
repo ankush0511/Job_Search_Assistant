@@ -12,6 +12,17 @@ from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI
 from langchain_groq import ChatGroq
 from config import GROQ_API_KEY
+import spacy
+from spacy.cli.download import download
+
+def load_spacy_model(model_name="en_core_web_lg"):
+    try:
+        return spacy.load(model_name)
+    except OSError:
+        download(model_name)  # Download the model programmatically
+        return spacy.load(model_name)
+
+nlp = load_spacy_model()
 
 # Load spaCy model
 try:
