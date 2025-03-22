@@ -13,3 +13,4 @@ langchain_groq
 dotenv
 langchain_community
 langchain_ollama
+python -m spacy download en_core_web_lg
