@@ -6,10 +6,8 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import FAISS
 # from langchain.embeddings import OpenAIEmbeddings
 from langchain_ollama import OllamaEmbeddings
-
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
 from langchain_groq import ChatGroq
 from config import GROQ_API_KEY
 import spacy
