@@ -5,9 +5,12 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 # API keys
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+
+SERPAPI_API_KEY = st.secrets["SERPAPI_API_KEY"]
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+# SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY")
+# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # Model settings
 LLM_MODEL = ChatGroq(model='gemma2-9b-it')
